@@ -1,12 +1,4 @@
-# Openhim Bootstrap Mediator
-
-A mediator scaffolding to be used for tutorials
-
-## Tutorials
-
-[OpenHIM Setup](https://github.com/jembi/openhim-mediator-tutorial/blob/master/0_Starting_OpenHIM.md)
-
-[OpenHIM Bootstrap Mediator Scaffold](https://github.com/jembi/openhim-mediator-tutorial/blob/master/1_Scaffold_OpenHIM_Mediator.md)
+# Openhim Mapping Mediator POC
 
 ## Getting Started
 
@@ -17,9 +9,9 @@ A mediator scaffolding to be used for tutorials
 From the project directory run:
 
 ```sh
-docker build -t scaffold .
+docker build -t generic-mapper .
 
-docker run --network {network-name} -p 3000:3000 --name scaffold scaffold
+docker run --network {network-name} -p 3000:3000 --name generic-mapper generic-mapper
 ```
 
 The network flag is optional. If connecting to a specific docker network find the network name by running:
@@ -31,7 +23,7 @@ docker network ls
 Environmental variables can be included using the `-e` flag. For example:
 
 ```sh
-docker run --network {network-name} -p 3000:3000 --name scaffold -e OPENHIM_TRUST_SELF_SIGNED=true scaffold
+docker run --network {network-name} -p 3000:3000 --name generic-mapper -e OPENHIM_TRUST_SELF_SIGNED=true generic-mapper
 ```
 
 ### NPM

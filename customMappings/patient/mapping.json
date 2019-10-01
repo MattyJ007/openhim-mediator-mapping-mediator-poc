@@ -1,0 +1,10 @@
+{
+  "input": {
+    "firstName": "name.given[0]",
+    "middleName": "name.given[]",
+    "surname": "name.family"
+  },
+  "constant": {
+    "resourceType": "resourceType"
+  }
+}

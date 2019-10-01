@@ -1,0 +1,20 @@
+{
+  "firstName": {
+    "validation": {
+      "type": "string",
+      "optional": false
+    }
+  },
+  "middleName": {
+    "validation": {
+      "type": "string",
+      "optional": true
+    }
+  },
+  "surname": {
+    "validation": {
+      "type": "string",
+      "optional": false
+    }
+  }
+}

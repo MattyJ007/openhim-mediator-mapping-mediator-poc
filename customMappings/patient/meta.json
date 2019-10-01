@@ -1,0 +1,16 @@
+{
+  "name": "Patient Orchestrator",
+  "endpoint": {
+    "pattern": "/Patient",
+    "methods": ["POST", "GET"]
+  },
+  "transformation": {
+    "input": "JSON",
+    "output": "JSON"
+  },
+  "destination": {
+    "host": "http://localhost",
+    "port": 3003,
+    "path": ""
+  }
+}

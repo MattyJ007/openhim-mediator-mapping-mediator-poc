@@ -1,17 +1,20 @@
 {
-  "name": "openhim-bootstrap-mediator",
+  "name": "openhim-mapping-mediator",
   "version": "1.0.0",
-  "description": "Scaffolding mediator to be used for tutorials",
-  "repository": "git@github.com:jembi/openhim-bootstrap-mediator.git",
+  "description": "Generic Mapping Mediator POC",
+  "repository": "git@github.com:MattyJ007/openhim-mediator-mapping-mediator-poc.git",
   "author": "Jembi Health Systems NPC",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "babel-node index.js",
+    "test:mappings": "babel-node ./test/mappings.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-env": "^2.4.1",
     "express": "^4.17.1",
-    "openhim-mediator-utils": "^0.2.3"
+    "object-mapper": "^5.0.0",
+    "openhim-mediator-utils": "^0.2.3",
+    "xml2json": "^0.11.2"
   }
 }
